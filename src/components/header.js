@@ -1,5 +1,3 @@
-// import { Link } from 'gatsby';
-// import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
@@ -39,44 +37,38 @@ import styled from 'styled-components';
 // Header.defaultProps = {
 //   siteTitle: ``,
 // }
-// $height: 180px;
-// $top: -$height / 2 + 9;
-// $width: 25px;
-// $color: #000000;
-const AppHeader = styled.div`
-	display: flex;
-	align-items: center;
-	height: 400px;
-	justify-content: flex-start;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
-	margin-bottom: 1.45rem;
-`;
+// const height = '180px';
+// const top = `-${height} / 2 + 9`;
+// const width = '25px';
+// const color = '#000000';
+
+const AppHeader = styled.div`height: 100%;`;
 const Logo = styled.div`
 	& {
-		height: 25px;
-		width: calc(25px * 3.2);
+		height: ${(props) => props.width};
+		width: calc(${(props) => props.width} * 3.2);
 		display: block;
 		position: relative;
-		background: #053582;
+		margin-bottom: 30px;
+		top: 27px;
+		left: 16px;
+		background: #4e4e50;
 		&:before {
 			content: "";
-			height: 180px;
-			width: 25px;
-			top: -180px / 2 + 9;
-			background: #000000;
+			height: ${(props) => props.height};
+			width: ${(props) => props.width};
+			top: calc(-${(props) => props.height} / 2 + 4px);
+			background: ${(props) => props.color};
 			position: absolute;
 		}
 		&:after {
 			content: "";
-			height: 180px;
-			width: 25px;
-			background: #000000;
+			height: ${(props) => props.height};
+			width: ${(props) => props.width};
+			background: ${(props) => props.color};
 			position: absolute;
-			right: -50px;
-			top: -180px / 2 + 9;
+			right: -16px;
+			top: calc(-${(props) => props.height} / 2 + 4px);
 		}
 	}
 `;
@@ -85,8 +77,7 @@ export default class Header extends Component {
 	render() {
 		return (
 			<AppHeader>
-				{/* <Logo /> */}
-				hello
+				<Logo height="42px" width="10px" color="#950740" />
 			</AppHeader>
 		);
 	}
