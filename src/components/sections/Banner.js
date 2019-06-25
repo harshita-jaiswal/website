@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Layout from '../layout';
 import Navbar from './Navbar';
 
 const Container = styled.div`
@@ -67,15 +66,15 @@ const Role = styled.p`
 	color: #ffffff;
 `;
 
-const Scroll = styled.div`
-	text-align: center;
-	width: 100%;
-	color: #ffffff;
-	margin-top: 25%;
-	/* margin: auto 0; */
-	/* margin-top: 100%; */
-	height: 100%;
-`;
+// const Scroll = styled.div`
+// 	text-align: center;
+// 	width: 100%;
+// 	color: #ffffff;
+// 	margin-top: 25%;
+// 	/* margin: auto 0; */
+// 	/* margin-top: 100%; */
+// 	height: 100%;
+// `;
 
 export default class Banner extends Component {
 	render() {

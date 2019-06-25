@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-	margin: 5rem 0 3rem;
+	margin: 0;
 	width: 100%;
-	padding-right: 70px;
+	/* padding-right: 70px; */
 	background: #ffffff;
 `;
 
@@ -32,13 +32,14 @@ const CardBackground = styled.div`
 
 const ListItem = styled.div`
 	position: relative;
-	flex: 0 1 66%;
+	/* flex: 0 1 66%;
+	max-width: 66%; */
+	flex: 0 1 100%;
+	max-width: 100%;
 	display: flex;
-	max-width: 66%;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	padding: 50px 16px;
 	border-bottom: 1px solid #000000;
-	border-top: 1px solid #000000;
 	align-items: flex-start;
 	&:hover {
 		${Border} {
@@ -104,10 +105,10 @@ export default class WorkListItem extends Component {
 					</CardBackground>
 					<SerialCont>
 						<Border />
-						<SerialNumber>01</SerialNumber>
+						<SerialNumber>0{this.props.number + 1}</SerialNumber>
 					</SerialCont>
 					<Content>
-						<Name>Salzbur­gring</Name>
+						<Name>{this.props.work.title}</Name>
 						<DescriptionList>
 							<Desc>
 								Victories and defeats, triumphs and tragedies, and oodles of passion for motor racing:
