@@ -6,7 +6,6 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background: #000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -187,7 +186,7 @@ textarea {
 	font: inherit;
 }
 html {
-	font: 112.5%/1.45em georgia, serif;
+	font: 112.5%/1.45em 'Noto Sans', sans-serif;
 	box-sizing: border-box;
 	overflow-y: scroll;
 }
@@ -202,7 +201,7 @@ html {
 }
 body {
 	color: hsla(0, 0%, 0%, 0.8);
-	font-family: georgia, serif;
+	font-family: 'Noto Sans', sans-serif;
 	font-weight: normal;
 	word-wrap: break-word;
 	font-kerning: normal;

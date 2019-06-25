@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
-import Navbar from "./sections/Navbar"
 // import Header from "./header"
 
 
@@ -34,6 +33,8 @@ const Layout = ({ children }) => (
             paddingTop: 0,
             height: `100%`,
             overflowX: `hidden`
+            // maxWidth: '1440px',
+            // margin: '0 auto'
           }}
         >
          <div style={{
@@ -42,7 +43,6 @@ const Layout = ({ children }) => (
            justifyContent: 'space-between'
          }}>
          <main style={{width:'100%'}}>{children}</main>
-          <Navbar />
          </div>
           <footer>
             {/* © {new Date().getFullYear()}, Built with
