@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Layout from '../layout';
+import Navbar from './Navbar';
 
 const Container = styled.div`
-	margin: 17rem 10% 0;
 	width: 100%;
-	padding-right: 70px;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	padding: 70px 0 0;
+	transform: translateY(-50%);
+`;
+const Body = styled.div`
+	background: #000;
+	width: 100%;
+	height: 100vh;
+`;
+const LayoutAlignment = styled.div`
+	margin: 0 auto;
+	max-width: 1440px;
+	position: relative;
+	height: 100%;
 `;
 const LogoContainer = styled.div`height: ${(props) => props.height};`;
 
@@ -51,16 +67,37 @@ const Role = styled.p`
 	color: #ffffff;
 `;
 
+const Scroll = styled.div`
+	text-align: center;
+	width: 100%;
+	color: #ffffff;
+	margin-top: 25%;
+	/* margin: auto 0; */
+	/* margin-top: 100%; */
+	height: 100%;
+`;
+
 export default class Banner extends Component {
 	render() {
 		return (
-			<Container>
-				<LogoContainer height="120px">
-					<Logo height="160px" width="25px" color="#950740" />
-				</LogoContainer>
-				<Intro>Harshita Jaiswal</Intro>
-				<Role>Full Stack Developer</Role>
-			</Container>
+			<Body>
+				<LayoutAlignment>
+					<Container>
+						<LogoContainer height="120px">
+							<Logo height="160px" width="25px" color="#950740" />
+						</LogoContainer>
+						<Intro>Harshita Jaiswal</Intro>
+						<Role>Full Stack Developer</Role>
+					</Container>
+					{/* <div> */}
+					<Navbar />
+					{/* </div> */}
+					{/* <Scroll>
+					<p>Scroll</p>
+					<div />
+				</Scroll> */}
+				</LayoutAlignment>
+			</Body>
 		);
 	}
 }

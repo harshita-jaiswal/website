@@ -7,11 +7,12 @@ const Container = styled.div`
 	top: 250px;
 	position: fixed;
 	right: 0;
-	// transform: rotate(180deg);
+	/* position: absolute; */
+	/* // transform: rotate(180deg); */
 `;
 
 const Nav = styled.ul`
-	color: #ffffff;
+	color: #4e4e50;
 	font-size: 12px;
 	list-style: none;
 `;
