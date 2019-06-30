@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import WorkListItem from '../Work/WorkListItem';
 
 const Container = styled.div`
-	margin: 5rem auto 3rem;
+	margin: 5rem auto;
 	width: 100%;
 	background: #ffffff;
 `;
@@ -48,7 +48,7 @@ export default class Work extends Component {
 				<SectionTitle>My Work</SectionTitle>
 				<ListContainer>
 					{this.work.map((item, index) => {
-						return <WorkListItem work={item} number={index} />;
+						return <WorkListItem work={item} number={index} key={index} />;
 					})}
 				</ListContainer>
 			</Container>

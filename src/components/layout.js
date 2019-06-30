@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
 // import Header from "./header"
-
+import Contact from '../components/sections/Contact';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -45,6 +45,7 @@ const Layout = ({ children }) => (
          <main style={{width:'100%'}}>{children}</main>
          </div>
           <footer>
+            <Contact/>
             {/* © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a> */}

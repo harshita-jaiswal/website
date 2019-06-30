@@ -101,6 +101,7 @@ export default class WorkListItem extends Component {
 							src="https://stefanprosch.com/uploads/images/_1200x1200_crop_center-center_82_line/salzburgring_title.jpg.webp"
 							height="auto"
 							width="1200"
+							alt={this.props.work.title}
 						/>
 					</CardBackground>
 					<SerialCont>

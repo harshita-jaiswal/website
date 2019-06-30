@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Banner from '../components/sections/banner';
 import Work from '../components/sections/Work';
+import About from '../components/sections/About';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -22,6 +23,7 @@ const IndexPage = () => (
 		<Banner />
 		<Container>
 			<Work />
+			<About />
 		</Container>
 	</Layout>
 );
