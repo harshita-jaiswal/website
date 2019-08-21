@@ -4,14 +4,20 @@ import Navbar from './Navbar';
 
 const Container = styled.div`
 	width: 100%;
-	position: absolute;
+	/* position: absolute;
 	top: 50%;
 	left: 10%;
-	padding: 70px 0 0;
-	transform: translateY(-50%);
+	padding: 70px 0 0; */
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	/* transform: translateY(-50%); */
 `;
 const Body = styled.div`
-	background: #000;
+	background: #000000;
 	width: 100%;
 	height: 100vh;
 `;
@@ -29,6 +35,12 @@ const Logo = styled.div`
 		width: calc(${(props) => props.width} * 3.2);
 		display: block;
 		position: relative;
+		left: -20px;
+		/* height: 100px;
+		width: 100px;
+		border: 1px solid #ffffff;
+		border-radius: 100%; */
+		/* text-align: center; */
 		background: #4e4e50;
 		&:before {
 			content: "";
@@ -44,16 +56,17 @@ const Logo = styled.div`
 			width: ${(props) => props.width};
 			background: ${(props) => props.color};
 			position: absolute;
-			right: -54px;
+			right: -33px;
 			top: calc(-${(props) => props.height} / 2 + 9px);
 		}
 	}
 `;
 
 const Intro = styled.p`
-	font-size: calc(2.5rem + 1vw);
+	font-size: calc(3.6rem + 1vw);
 	color: #ffffff;
-	line-height: 45px;
+	text-align: center;
+	line-height: 65px;
 	font-weight: 700;
 	font-family: 'Inconsolata';
 `;
@@ -62,7 +75,9 @@ const Role = styled.p`
 	line-height: 25px;
 	font-weight: 400;
 	font-family: 'Noto Sans';
-	font-size: calc(1rem + 1vw);
+	justify-self: flex-end;
+	margin-top: 70px;
+	font-size: calc(0.8rem + 1vw);
 	color: #ffffff;
 `;
 
@@ -83,10 +98,12 @@ export default class Banner extends Component {
 				<LayoutAlignment>
 					<Container>
 						<LogoContainer height="120px">
-							<Logo height="160px" width="25px" color="#950740" />
+							<Logo height="88px" width="15px" color="#950740" />
 						</LogoContainer>
-						<Intro>Harshita Jaiswal</Intro>
-						<Role>Full Stack Developer</Role>
+						<Intro>
+							harshita<br /> jaiswal
+						</Intro>
+						<Role>full stack developer</Role>
 					</Container>
 					{/* <div> */}
 					<Navbar />

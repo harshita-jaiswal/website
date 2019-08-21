@@ -13,7 +13,7 @@ import Codepen from '../../assets/codepen.svg';
 // 	transform: translateY(-50%);
 // `;
 const Body = styled.div`
-	background: #262228;
+	background: #950740;
 	width: 100%;
 	height: 12vh;
 	display: flex;

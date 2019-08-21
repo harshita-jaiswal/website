@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	width: 100px;
-	color: white;
+	color: #ffffff;
 	top: 250px;
 	position: fixed;
 	right: 0;
@@ -12,9 +12,11 @@ const Container = styled.div`
 `;
 
 const Nav = styled.ul`
-	color: #4e4e50;
+	/* color: #4e4e50; */
+	color: #ffffff;
 	font-size: 12px;
 	list-style: none;
+	font-weight: 600;
 `;
 
 const NavItem = styled.li`

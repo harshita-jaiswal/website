@@ -5,11 +5,11 @@ const Container = styled.div`
 	margin: 0;
 	width: 100%;
 	/* padding-right: 70px; */
-	background: #ffffff;
+	background: #000000;
 `;
 
 const Border = styled.div`
-	border-bottom: 1.5px solid #000000;
+	border-bottom: 1.5px solid #ffffff;
 	height: 5px;
 	width: 20px;
 	margin-right: 10px;
@@ -39,7 +39,7 @@ const ListItem = styled.div`
 	display: flex;
 	/* margin: 0 auto; */
 	padding: 50px 16px;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #ffffff;
 	align-items: flex-start;
 	&:hover {
 		${Border} {

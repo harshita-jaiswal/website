@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import WorkListItem from '../Work/WorkListItem';
+import WorkListItem from './WorkListItem';
 
 const Container = styled.div`
 	margin: 5rem auto;
 	width: 100%;
-	background: #ffffff;
+	background: #000000;
+	color: #ffffff;
 `;
 
 const SectionTitle = styled.h3`
