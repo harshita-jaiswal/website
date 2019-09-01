@@ -14,8 +14,7 @@ const Container = styled.div`
 	margin: 0 auto;
 	padding: 20px;
 	max-width: 1440px;
-	background: #000000;
-	/* margin: 0 auto; */
+	background-color: #252835;
 `;
 
 const IndexPage = () => (

@@ -5,11 +5,11 @@ const Container = styled.div`
 	margin: 0;
 	width: 100%;
 	/* padding-right: 70px; */
-	background: #000000;
+	/* background: #000000; */
 `;
 
 const Border = styled.div`
-	border-bottom: 1.5px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
 	height: 5px;
 	width: 20px;
 	margin-right: 10px;
@@ -27,7 +27,9 @@ const CardBackground = styled.div`
 	opacity: 0;
 	overflow: hidden;
 	transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-	background-color: gray;
+	/* background-color: gray; */
+
+	background-color: #252835;
 `;
 
 const ListItem = styled.div`

@@ -52,7 +52,6 @@ const Logo = styled.div`
 		margin-bottom: 30px;
 		top: 27px;
 		left: 16px;
-		background: #4e4e50;
 		&:before {
 			content: "";
 			height: ${(props) => props.height};

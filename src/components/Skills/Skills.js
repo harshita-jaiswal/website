@@ -5,18 +5,18 @@ import SkillListItem from './SkillListItem';
 const Container = styled.div`
 	margin: 5rem auto;
 	width: 100%;
-	background: #000000;
 	color: #ffffff;
 `;
 
 const SectionTitle = styled.h3`
 	text-align: center;
-	font-size: 1.7rem;
-	margin: 2rem auto;
+	font-size: 3.3rem;
+	margin: 4rem auto;
+	font-family: "Rammetto One", cursive;
 `;
 
 const ListContainer = styled.div`
-	border-top: 1px solid #000000;
+	/* border-top: 1px solid #000000; */
 	max-width: 66%;
 	margin: 4rem auto 2rem;
 	height: 100%;
