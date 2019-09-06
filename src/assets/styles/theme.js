@@ -1,11 +1,12 @@
 export const darkTheme = {
-  mainColor: "topaz",
-  secondaryColor: "ruby",
-}
+	backgroundColor: '#1f1e1f',
+	iconColor: '#ffffff',
+	textColor: '#f4efef'
+};
 
 export const lightTheme = {
-  mainColor: "pampas",
-  secondaryColor: "ruby",
-  buttonColor: "shadyLady",
-  // Note both themes don't necessary have to match (you'll probably want them to though)
-}
+	backgroundColor: '#f3eded',
+	iconColor: '#333333',
+	textColor: '#1f1e1f'
+	// Note both themes don't necessary have to match (you'll probably want them to though)
+};

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { ThemeManagerContext } from 'gatsby-styled-components-dark-mode';
 import styled from 'styled-components';
 import Logo from '../../assets/logo.svg';
 import Codepen from '../../assets/codepen.svg';
@@ -27,6 +28,8 @@ const ThemeBtn = styled.span`
 `;
 
 export default class Head extends Component {
+
+    // var themeContext = useContext(ThemeManagerContext);
 	render() {
 		return (
 			<Content>

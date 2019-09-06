@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
 					overflowX: `hidden`,
 					// padding: 20px 245px
 					// max-width: 1440px;
-					maxWidth: '1440px',
+					maxWidth: `950px`,
 					margin: '0 auto'
 				}}
 			>
