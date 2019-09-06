@@ -32,7 +32,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
 			options: {
 				google: {
-					families: [ 'Rammetto+One', 'Ubuntu:400,500' ]
+					families: [ 'Archivo+Black', 'Source Code Pro', 'Oxygen Mono', 'Ubuntu:400,500' ]
 				}
 			}
 		},
@@ -42,6 +42,13 @@ module.exports = {
 				rule: {
 					include: /assets/ // See below to configure properly
 				}
+			}
+		},
+		{
+			resolve: `gatsby-styled-components-dark-mode`,
+			options: {
+				light: { mainColor: 'brandyRose' },
+				dark: { mainColor: 'manatee' }
 			}
 		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality

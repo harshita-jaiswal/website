@@ -16,6 +16,7 @@
 		"gatsby-plugin-styled-components": "^3.0.7",
 		"gatsby-plugin-web-font-loader": "^1.0.4",
 		"gatsby-source-filesystem": "^2.0.38",
+		"gatsby-styled-components-dark-mode": "^1.0.7",
 		"gatsby-transformer-sharp": "^2.1.21",
 		"gh-pages": "^2.0.1",
 		"normalize.css": "^8.0.1",
