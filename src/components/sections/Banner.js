@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Info } from '../../assets/styles/Content';
 
 const Body = styled.div`
 	height: 100%;
@@ -13,14 +14,16 @@ const Body = styled.div`
 	line-height: 46px;
 `;
 
-const Info = styled.p`margin: 0;`;
-
 export default class Banner extends Component {
 	render() {
 		return (
 			<Body>
-				<Info>Hello there, nice to meet you !!</Info>
-				<Info> I am Harshita Jaiswal.</Info>
+				<Info steps="32" delay="1s">
+					Hello there, nice to meet you !!
+				</Info>
+				<Info steps="22" delay="4s">
+					I am Harshita Jaiswal.
+				</Info>
 			</Body>
 		);
 	}
