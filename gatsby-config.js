@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Default Starter`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`
+		title: `Harshita Jaiswal`,
+		description: `I am full stack developer`,
+		author: `@harshitajaiswal`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -25,17 +25,17 @@ module.exports = {
 				background_color: `#0F1626`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+				icon: `src/assets/favicon.ico` // This path is relative to the root of the site.
 			}
 		},
-		{
-			resolve: 'gatsby-plugin-web-font-loader',
-			options: {
-				google: {
-					families: [ 'Archivo+Black', 'Source Code Pro', 'Oxygen Mono', 'Ubuntu:400,500' ]
-				}
-			}
-		},
+		// {
+		// 	resolve: 'gatsby-plugin-web-font-loader',
+		// 	options: {
+		// 		google: {
+		// 			families: [ 'Archivo+Black', 'Source Code Pro', 'Oxygen Mono', 'Ubuntu:400,500' ]
+		// 		}
+		// 	}
+		// },
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
