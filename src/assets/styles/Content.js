@@ -5,7 +5,6 @@ export const Info = styled.p`
 	margin: 0;
 	width: auto;
 	overflow: hidden;
-	height: 40px;
 	white-space: nowrap;
 	transform: translateY(-50%);
 	text-align: center;

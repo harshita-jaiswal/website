@@ -25,7 +25,7 @@ module.exports = {
 				background_color: `#0F1626`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				icon: `src/assets/favicon.ico` // This path is relative to the root of the site.
+				icon: `src/assets/favicon/favicon-32x32.png` // This path is relative to the root of the site.
 			}
 		},
 		// {
@@ -42,13 +42,6 @@ module.exports = {
 				rule: {
 					include: /assets/ // See below to configure properly
 				}
-			}
-		},
-		{
-			resolve: `gatsby-styled-components-dark-mode`,
-			options: {
-				// light: require(`${__dirname}/assets/theme.js`).lightTheme,
-				// dark: require(`${__dirname}/assets/theme.js`).darkTheme
 			}
 		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality

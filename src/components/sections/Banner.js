@@ -9,22 +9,26 @@ const Body = styled.div`
 	align-items: center;
 	justify-content: center;
 	font-family: "Source Code Pro";
-	color: #f4efef;
-	font-size: 28px;
+	color: ${(props) => props.theme.textColor};
+	font-size: 22px;
 	line-height: 46px;
 `;
 
-export default class Banner extends Component {
-	render() {
-		return (
-			<Body>
-				<Info steps="32" delay="1s">
-					Hello there, nice to meet you !!
-				</Info>
-				<Info steps="22" delay="4s">
-					I am Harshita Jaiswal.
-				</Info>
-			</Body>
-		);
-	}
+const Symbol = styled.p`
+	font-size: 2rem;
+	font-weight: bolder;
+`;
+
+export default function Banner(props) {
+	return (
+		<Body>
+			<Info theme={props.theme} steps="32" delay="1s">
+				Hello there, nice to meet you !!
+			</Info>
+			<Info steps="22" delay="4s">
+				I am Harshita Jaiswal.
+			</Info>
+			<Symbol>\ ( o _ o ) /</Symbol>
+		</Body>
+	);
 }
